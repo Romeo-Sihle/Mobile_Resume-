@@ -1,0 +1,291 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+	font-family: "Tahoma", sans-serif;
+	height: 100%;
+	margin-top: 10px;
+	width: 100%;
+	background-color: rgba(0,0,0,0.1);
+	
+}
+
+
+#boxes
+{
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: -3px -1px 9px 4px;
+	margin-bottom: 20px;
+}
+
+#boxes:hover
+{
+	border: thick solid;
+	border: 30px;
+	box-shadow: -3px -3px 15px 8px;
+	border-color: orange;
+	transition: 1s;
+	border-radius: 5px;
+}
+
+.my-container
+{
+	width: 100%;
+	height: 100%;
+}
+
+.profileInfo
+{
+	border: thin solid;
+	padding: 10px;
+	margin-bottom: 10px;
+	width: 100%;
+}
+
+.card
+{
+	width: 100%;
+	background-color: rgba(0,0,0,0.2);
+	box-shadow: 0px 0px 10px 4px;
+}
+
+.card:hover
+{
+	box-shadow: -3px -3px 15px 8px;
+	transition: 1.5s;
+}
+
+.image
+{
+	height: 300px;
+	width: 100%;
+}
+
+.details
+{
+	
+}
+
+.glyphicon
+{
+	color: orange;
+}
+
+.info1
+{
+	border-bottom: solid thin;
+	width: 90%;
+	list-style-type: none;
+}
+
+.info2
+{
+	border-bottom: solid thin;
+	list-style-type: none;
+	width: 90%;
+}
+
+.about
+{
+	border: thin solid;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.education
+{
+	border: thin solid;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.educationBorder
+{
+	border-bottom: thin solid;
+	border-width: 60%;
+	margin-bottom: 5px;
+}
+
+.experince
+{
+	border: thin solid;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.careerGoals
+{
+	border: thin solid;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.list 
+{
+	list-style-type: none;
+}
+
+.references
+{
+	border: thin solid;
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+.table
+{
+	font-size: 18px;
+	
+}
+
+a:hover
+{
+	background-color: #555;
+	color: #fff;
+	padding: 2px;
+	border-radius: 5px;
+	box-shadow: 0px -9px 10px 4px;
+	text-shadow: 0px -9px 10px 4px;
+	transition: 0.8s;
+}
+
+.btn-contact
+{
+	padding: 2px;
+	background: rgba(0,0,0,0.4);
+	width: 40%;
+	border-radius: 5px;
+	border: none; 
+	margin-left: 10px;
+}
+
+.btn-contact:hover
+{
+	background-color: #555;
+	box-shadow: 0px 0px 10px 4px;
+	transition: 0.5s;
+}
+
+
+.footer
+{
+	border: thin solid;
+	padding: 10px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+/*___________________________Scroll to top button CSS_____________________*/
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background: rgba(0,0,0,0.6);
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+  scroll-behavior: smooth;
+}
+
+#myBtn:hover {
+  background-color: #555;
+  box-shadow: 5px 9px 10px 6px;
+  transition: 0.4s;
+}
+/*___________________________Scroll to top button ends here CSS_____________________*/
+
+
+/*--------------------------------footer---------------------------*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 5px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+/*--------------------------------footer---------------------------*/
+
+
+
+/*-------------------Media Queries--------------------*/
+
+
+@media (max-width: 768px) 
+{
+  .table 
+  {
+    font-size: 10px;  
+  }
+}
+
+@media (max-width: 768px) /*---------Tablet Mode---------*/
+{
+  .btn-contact 
+  {
+    width: 80%;
+    margin-left: 0px;  
+  }
+}
+
+@media (max-width: 982px)
+{
+	.info2
+	{
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 872px)
+{
+	.info2
+	{
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 759px)
+{
+	.info2
+	{
+		font-size: 12px;
+	}
+}
+/*-----------------Media Queries-------------------*/
