@@ -19,7 +19,7 @@
     <!------Font Awesome Icon Kit CDN----->
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <!--W3 Schools Footer Links-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">  
     <!--CSS link-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
@@ -33,18 +33,30 @@
     <button onclick="topFunction()" id="myBtn" title="Go to top">
       <span class="glyphicon glyphicon-chevron-up"></span></button>
 
- 
+                  <div id="myDropdown" class="dropdown-content">
+                        <p class="popupText"><b>To whom it may concern</b></p> 
+                        <p class="popupText">I hereby forward my Curriculum Vitae.</p> 
+                        <p class="popupText">I wish to apply for the position presented by your organisation. I have the knowledge and skills and I believe that I can  professionally fulfil the position as required by your organisation. I am eager to enhance and define my personal  development within the organisation and tackle the challenges that lie ahead.</p>  
+                        <p class="popupText">With the use of my skills and knowledge to their maximum effect, I will effectively perform all my tasks as required by  your organisation and maintain the standard as defined by you. Given the opportunity, I shall perform all my duties with perseverance, dedication and loyalty. It is my aim to make and become part of a successful team that is directly involved in making the organisation a success, as I believe that I can contribute in making your organisation a success.</p> 
+                        <p class="popupText">I hope that my application will receive your favourable consideration.</p> 
+                        <p class="popupText">Yours truly</p> 
+                        <p class="popupText"><b>Romeo Mnxulwa</b></p>
+                    </div>
+
     <div class="container-fluid my-container">
       <div class="row my-row">
         <div class="col-md-4 my-col">
-          <div class="profileInfo" id="boxes">     <!--Profile Picture Section-->
-            <div class="card">
+
+          
+
+          <div class="profileInfo" id="boxes">     <!--Profile Info Section-->
+            <div class="card">                <!--Profile Picture Section-->
               <img src="image/profile.jpg" class="card-img-top image" alt="Profile Picture">
               <div class="card-body">
                 <center>
                   <p class="card-text"><big><b>Romeo Mnxulwa</b></big></p>
-                     <h1><span class="glyphicon glyphicon-camera"></span></h1>
-                     <p><small><b>Upload a Picture</b></small></p>
+                    <div class="dropdown">
+                     <h1><button onclick="myFunction()" class="dropbtn">Cover Letter</button></h1> 
                 </center>
               </div>
             </div>
@@ -56,14 +68,14 @@
                   <li><b>Surname:</b> Mnxulwa</li>
                   <li><b>Marital Status:</b> Single</li>
                   <li><b>Gender:</b> Male</li>
-                  <li><b>Date of Birth:</b> 17/03/1994</li>
+                  <li><b>Date of Birth:</b> 17-03-1994</li>
                   <li><b>Citizenship:</b> South African</li>
                   <li><b>Health:</b> Excellent</li>
                   <li><b>Disability:</b> None</li>
                 </ul>
 
                 <ul class="info2">
-                  <li><span class="glyphicon glyphicon-briefcase"></span> <b>Web Developer</b></li>
+                  <li><span class="glyphicon glyphicon-briefcase"></span> <b>Full Stack Developer</b></li>
                   <li><span class="glyphicon glyphicon-home"></span> <b>Barkly East, 12 Hunt St</b></li>
                   <li><span class="glyphicon glyphicon-envelope"></span> <b><a href="mailto: romeosihle.mnxulwa@gmail.com">romeosihle.mnxulwa@gmail.com</a></b></li>
                   <li><span class="glyphicon glyphicon-phone"></span> <b>+2763 710 2839</b></li>
@@ -126,14 +138,26 @@
                     </div>
 
                     <div class="progress">
+                      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+                        <b>Vue j.s 70%</b> 
+                      </div>
+                    </div>
+
+                    <div class="progress">
                       <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
-                        <b>Android Mobile Development 70%</b>
+                        <b>Ajax 80%</b> 
+                      </div>
+                    </div>
+
+                    <div class="progress">
+                      <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                        <b>Mobile Development 80%</b>
                       </div>
                     </div>
 
                     <div class="progress">
                       <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%">
-                        <b>Amazon Web Services 60%</b>
+                        <b>AWS 60%</b>
                       </div>
                     </div>
 
@@ -164,8 +188,61 @@
 
                 </div>
             </div>
-          </div>   
+          </div> 
+            <div class="row my-row">
+              <div class="col my-col">
+                <div class="projectlinks" id="boxes">
+                  <h1><span class="glyphicon glyphicon-info-sign"></span> <small>Projects: </small>
+                  <button type="button" class="btn btn-warning" id="mybtn"><b>View More</b></button>
+                  </h1>
+                 
+                  <p><b>Recipe web Page:</b> <a href="">........</a></p>
+                  <p><b>Quiz:</b> <a href="">......................</a></p>
+                  <p><b>Hotel Booking:</b> <a href="">.............</a></p>
+                  <p><b>To Do List App:</b> <a href="">............</a></p>
+                  <p><b>Online Store:</b> <a href="">..............</a></p>
+
+                   <!--\\\\\\\\\\\\\\\\\\\\\\\Pop Up starts here\\\\\\\\\\\\\\\\\\-->
+                    <!-- Trigger/Open The Modal -->
+                      
+                      <!-- The Modal -->
+                      <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <span class="close">&times;</span>
+                          </div>
+                          <div class="modal-body">
+                            <p class="popupText">The Projects Below Are All Created By <b>Romeo</b> Including This Mobile Resume. They Are Hosted On Free Web Host Platforms, namely <u>Infinity Free and Heroku</u>.</p>
+                            <p class="popupText">If You Wish To View The Coding Structure Of My Projects On My <b>GitHub</b>, Please Click The Git Hub Links Below:</p>
+                            <ul class="hostLinks">
+                              <li><img src="https://img.icons8.com/ios/50/000000/github.png" width=20 height=20/><b>Recipe web Page: </b><a href="https://github.com/Romeo-Sihle/Recipe">https://github.com/Romeo-Sihle/Recipe</a></li>
+                              <li><img src="https://img.icons8.com/ios/50/000000/github.png" width=20 height=20/><b>Quiz: </b><a href="https://github.com/Romeo-Sihle/Quiz">https://github.com/Romeo-Sihle/Quiz</a></li>
+                              <li><img src="https://img.icons8.com/ios/50/000000/github.png" width=20 height=20/><b>Hotel Booking:</b> <a href="https://github.com/Romeo-Sihle/Hotel_Booking">https://github.com/Romeo-Sihle/Hotel_Booking</a></li>
+                              <li><img src="https://img.icons8.com/ios/50/000000/github.png" width=20 height=20/><b>Task App: </b><a href="https://github.com/Romeo-Sihle/Task_App">https://github.com/Romeo-Sihle/Task_App</a></li>
+                              <li><img src="https://img.icons8.com/ios/50/000000/github.png" width=20 height=20/><b>Online Store: </b><a href="https://github.com/Romeo-Sihle/OnlineStore">https://github.com/Romeo-Sihle/OnlineStore</a></li>
+                            </ul>
+
+                            <ul class="popupText">
+                              <li class="help"><span class="glyphicon glyphicon-info-sign"></span> To Send An E-Mail To The References Section, Click On The Envelope Icon <span class="glyphicon glyphicon-envelope"></li>
+                              <li class="help"><span class="glyphicon glyphicon-info-sign"></span> To Create A Contact In The References Section, Click The Call Icon <span class="glyphicon glyphicon-earphone"></li>
+                            </ul>
+                            
+                          </div>
+                          <div class="modal-footer">
+                            <h3>Romeo Mnxulwa</h3>
+                          </div>
+                        </div>
+
+                      </div>
+              <!--\\\\\\\\\\\\\\\\\\\\\pop up ends here\\\\\\\\\\\\\\\\\\\\\\-->
+                </div>
+              </div>  
+            </div>
       </div>
+
+
 
         <div class="col-md-8 my-col"> 
           <div class="about" id="boxes">
@@ -216,6 +293,7 @@
               </ul>
           </div> 
 
+          <!------------------------------Career Goals--------------------------------------->
           <div class="careerGoals" id="boxes">
             <h1><small><span class="glyphicon glyphicon-pencil"></span> Career Goals</small></h1>
             <h1><small><span class="glyphicon glyphicon-pushpin"></span> Short term goals</small></h1>
@@ -231,7 +309,7 @@
             </ul>
           </div>
 
-          
+          <!-----------------------------Referencecs Section-------------------------------->
             <div class="references" id="boxes">
               <table class="table table-striped">
                 <thead>
@@ -247,31 +325,31 @@
                   <tr>
                     <th scope="row"></th>
                     <td>Mr Lyndon Daniels</td>
-                    <td><span class="glyphicon glyphicon-envelope"></span> <a href="mailto: lyndon@codespace.co.za">lyndon@codespace.co.za</td>
+                    <td><a href="mailto: lyndon@codespace.co.za"> <span class="glyphicon glyphicon-envelope" style='font-size:25px'></span></a></td>
                     <td><button class="btn-contact" onclick="myFunction1()"><span class="glyphicon glyphicon-earphone"></span></button></td>
                   </tr>
                   <tr>
                     <th scope="row"></th>
-                    <td>Kevin Mabusa</td>
-                    <td><span class="glyphicon glyphicon-envelope"></span> ...</td>
+                    <td>Jessica Canham</td>
+                    <td><a href="mailto: jessica@codespace.co.za"><span class="glyphicon glyphicon-envelope" style='font-size:25px'></a></span></td>
                     <td><button class="btn-contact" onclick="myFunction2()"><span class="glyphicon glyphicon-earphone"></span></button></td>
                   </tr>
                   <tr>
                     <th scope="row"></th>
                     <td>Devon Naidoo</td>
-                    <td><span class="glyphicon glyphicon-envelope"></span> <a href="mailto: devonnaid0013@gmail.com<">devonnaid0013@gmail.com</td>
+                    <td><a href="mailto: devonnaid0013@gmail.com"><span class="glyphicon glyphicon-envelope" style='font-size:25px'></span></a></td>
                     <td><button class="btn-contact" onclick="myFunction3()"><span class="glyphicon glyphicon-earphone"></span></button></td>
                   </tr>
                   <tr>
                     <th scope="row"></th>
                     <td>Warrick Knickelbein</td>
-                    <td><span class="glyphicon glyphicon-envelope"></span> N/A</td>
+                    <td><a href="mailto: "><span class="glyphicon glyphicon-envelope" style='font-size:25px'></span></a></td>
                     <td><button class="btn-contact" onclick="myFunction4()"><span class="glyphicon glyphicon-earphone"></span></button></td>
                   </tr>
                   <tr>
                     <th scope="row"></th>
                     <td>Caron Skitsi</td>
-                    <td><span class="glyphicon glyphicon-envelope"></span> N/A</td>
+                    <td><a href="mailto: "><span class="glyphicon glyphicon-envelope" style='font-size:25px'></span></a> </td>
                     <td><button class="btn-contact" onclick="myFunction5()"><span class="glyphicon glyphicon-earphone"></span></button></td>
                   </tr>
                 </tbody>
@@ -284,12 +362,13 @@
     <div class="row my-row">
         <div class="col my-col">
           <center>
-            <div class="footer" id="boxes">       
+            <div class="footer" id="boxes"> 
+            <p class="credits"><small>Engineered by: <br> <span class="engineer"><b>Romeo Mnxulwa</b></span></small></p>      
                <!-- Add font awesome icons -->
-              <a href="#" class="fa fa-facebook"></a>
-              <a href="#" class="fa fa-twitter"></a>
-              <a href="#" class="fa fa-linkedin"></a>
-              <a href="#" class="fa fa-skype"></a>
+              <a href="https://www.offerzen.com/candidate/romeo-mnxulwa" class="fa fa-opera" style="font-size: 18px";>fferzen</a>
+              <a href="#" class="fa fa-github" style="font-size: 18px";></a>
+              <a href="https://www.linkedin.com/in/sihle-mnxulwa-0a867a16b" class="fa fa-linkedin" style="font-size: 18px";></a>
+              <a href="#" class="fa fa-skype"  style="font-size: 18px";></a>
             </div>
         </center>
         </div>
@@ -319,17 +398,72 @@
     }
   </script>
 
+  <!-----------------------Projects Pop-Up javascript Starts here------------------------------------>
+   <script>
+    // Get the modal
+    var modal = document.getElementById("myModal");
 
-  <!-------------------------------Pop up--------------------------------->
+    // Get the button that opens the modal
+    var btn = document.getElementById("mybtn");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function() {
+      modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+</script>
+  <!-----------------------Projects Pop Up javascript Ends here------------------------------------>
+
+<!-----------------------Cover Leetter Pop Up-------------------------->
+
+<script>
+  /* When the user clicks on the button, 
+  toggle between hiding and showing the dropdown content */
+  function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+  }
+
+  // Close the dropdown if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains('show')) {
+          openDropdown.classList.remove('show');
+        }
+      }
+    }
+  }
+</script>
+<!------------------------Covre Letter Pop Up-------------------------->
+  
+
+  <!-------------------------------Refrence Pop up--------------------------------->
   <script>
     function myFunction1() {
-      alert("Mr Lyndon Daniels: N/A [Code Space College Facilitator]");
+      alert("Mr Lyndon Daniels: Cellphone number Not available [Code Space College Facilitator]");
     }
   </script>
 
   <script>
     function myFunction2() {
-      alert("Mr Kevin Mabusa: N/A [Code Space College Mentor]");
+      alert("Ms Jessica Canham: Cellphone number Not available [Code Space College Mentor]");
     }
   </script>
 
