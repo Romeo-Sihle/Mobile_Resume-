@@ -3,7 +3,7 @@
 Project Title: Online Resume
 
 Description:
-This is a personalized Curriculum Vitae that has been converted from HTML to an Android app to showcase creativity and is hosted on the internet, https://romeomnxlwa.epizy.com/MyResume/
+This is a personalized Curriculum Vitae that has been converted from HTML to an Android app to showcase creativity and is hosted on the internet, https://romeo-sihle.github.io/Mobile_Resume/
 
 
 Project prerequisites:
@@ -21,3 +21,5 @@ Programming Languages:
 •	HTML
 •	CSS
 •	Bootstrap
+•	JavaScript
+
