@@ -14,9 +14,7 @@ body
 	font-family: "Tahoma", sans-serif;
 	height: 100%;
 	margin-top: 10px;
-	width: 100%;
-	background-color: rgba(0,0,0,0.1);
-	
+	width: 100%;	
 }
 
 
@@ -26,7 +24,6 @@ body
 	background-color: #fff;
 	box-shadow: -3px -1px 9px 4px;
 	margin-bottom: 20px;
-
 }
 
 #boxes:hover
@@ -72,11 +69,6 @@ body
 	width: 100%;
 }
 
-.details
-{
-	
-}
-
 .glyphicon
 {
 	color: orange;
@@ -98,10 +90,11 @@ body
 
 .projectlinks
 {
-	border: thin solid;
-	padding: 10px;
+  border: thin solid;
+  padding: 10px;
 	margin-bottom: 10px;
-	width: 100%;
+  width: 100%;
+  word-wrap: break-word;
 }
 
 .about
@@ -439,11 +432,24 @@ h2
 .show {display: block;}
 /*--------------Pop Up 2 -----------------*/
 
-/*---------------------Cover Letter Scroll Bar------------------*/
+/*--------------------- Galleria css starts here ------------------*/
+
+.imageWrapper
+{
+  padding: 10px;
+  height: 100%;
+  width: 100%;
+}
+ /* Gallery measures that will be applied */
+ .images
+  {
+     height: 100px;    /* defines a static gallery height */
+     max-width: 100%; /* defines a responsive width */
+  }
 
 
 
-/*---------------------Cover Letter Scroll Bar ends here------------*/
+/*---------------------Galleria css ends here------------*/
 
 /*-------------------Media Queries--------------------*/
 
@@ -533,6 +539,7 @@ h2
   }
 
 }
-/*------------------Pprojects Pop Up---------------- */
+ 
+/*------------------Projects Pop Up---------------- */
 
 /*-----------------Media Queries-------------------*/
